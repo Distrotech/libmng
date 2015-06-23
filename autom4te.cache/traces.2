@@ -63,11 +63,6 @@ AS_IF([test -z "$ARGZ_H"],
 AC_SUBST([ARGZ_H])
 ])
 m4trace:/usr/share/aclocal/argz.m4:79: -1- AC_DEFUN([gl_PREREQ_ARGZ], [:])
-m4trace:/usr/share/aclocal/isc-posix.m4:21: -1- AC_DEFUN([AC_ISC_POSIX], [
-    dnl This test replaces the obsolescent AC_ISC_POSIX kludge.
-    AC_CHECK_LIB(cposix, strerror, [LIBS="$LIBS -lcposix"])
-  
-])
 m4trace:/usr/share/aclocal/libtool.m4:69: -1- AC_DEFUN([LT_INIT], [AC_PREREQ([2.58])dnl We use AC_INCLUDES_DEFAULT
 AC_REQUIRE([AC_CONFIG_AUX_DIR_DEFAULT])dnl
 AC_BEFORE([$0], [LT_LANG])dnl
@@ -2364,7 +2359,9 @@ m4trace:configure.in:16: -1- m4_pattern_allow([^am__fastdepCC_TRUE$])
 m4trace:configure.in:16: -1- m4_pattern_allow([^am__fastdepCC_FALSE$])
 m4trace:configure.in:16: -1- _AM_SUBST_NOTMAKE([am__fastdepCC_TRUE])
 m4trace:configure.in:16: -1- _AM_SUBST_NOTMAKE([am__fastdepCC_FALSE])
-m4trace:configure.in:17: -1- AC_ISC_POSIX
+m4trace:configure.in:17: -1- _m4_warn([obsolete], [The macro `AC_ISC_POSIX' is obsolete.
+You should run autoupdate.], [../.././../lib/autoconf/specific.m4:446: AC_ISC_POSIX is expanded from...
+configure.in:17: the top level])
 m4trace:configure.in:18: -1- AM_C_PROTOTYPES
 m4trace:configure.in:18: -1- m4_pattern_allow([^PROTOTYPES$])
 m4trace:configure.in:18: -1- m4_pattern_allow([^__PROTOTYPES$])
